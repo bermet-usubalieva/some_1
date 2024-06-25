@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(0,0,0) 85%),linear-gradient(78deg, rgba(192, 192, 192,0.05) 0%, rgba(192, 192, 192,0.05) 50%,rgba(60, 60, 60,0.05) 50%, rgba(60, 60, 60,0.05) 100%),linear-gradient(227deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(52, 52, 52,0.05) 50%, rgba(52, 52, 52,0.05) 100%),linear-gradient(240deg, rgba(98, 98, 98,0.05) 0%, rgba(98, 98, 98,0.05) 50%,rgba(249, 249, 249,0.05) 50%, rgba(249, 249, 249,0.05) 100%),linear-gradient(187deg, rgba(1, 1, 1,0.05) 0%, rgba(1, 1, 1,0.05) 50%,rgba(202, 202, 202,0.05) 50%, rgba(202, 202, 202,0.05) 100%),linear-gradient(101deg, rgba(61, 61, 61,0.05) 0%, rgba(61, 61, 61,0.05) 50%,rgba(254, 254, 254,0.05) 50%, rgba(254, 254, 254,0.05) 100%),linear-gradient(176deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(147, 147, 147,0.05) 50%, rgba(147, 147, 147,0.05) 100%),linear-gradient(304deg, rgba(183, 183, 183,0.05) 0%, rgba(183, 183, 183,0.05) 50%,rgba(57, 57, 57,0.05) 50%, rgba(57, 57, 57,0.05) 100%),radial-gradient(circle at center center, hsl(351,4%,12%),hsl(351,4%,12%));
+    background-attachment: fixed;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container_special {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header_top_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.header_top_block h1 {
+    color: rgb(0, 136, 162);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.nav_wrap {
+    background-color: rgb(112, 112, 112);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_li {
+    list-style: none;
+    width: 20%;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.menu__item:hover {
+    background-color: rgb(0, 136, 162);
+}
+
+.burger_menu {
+    display: none;
+}
+
+.question {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.adap {
+    display: none;
+}
+
+.dots,
+.dots_project {
+    display: none;
+}
+
+.question .card {
+    flex: 0 1 30%;
+    position: relative;
+    transition: .3s;
+}
+
+.question .card img {
+    width: 100%;
+}
+
+.question .text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    line-height: 33px;
+    text-align: center;
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.question .card:hover {
+    transform: scale(1.07);
+}
+
+.app_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 86px auto 164px;
+}
+
+.grayLine {
+    width: 100%;
+    height: 13px;
+    background-color: rgb(229, 229, 229);
+    ;
+    margin-bottom: 61px;
+}
+
+.app__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 131px;
+    color: rgb(0, 136, 162);
+    margin-bottom: 31px;
+}
+
+.video_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 96%;
+}
+
+.video__img {
+    width: 100%;
+}
+
+.video__btn {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_wrap {
+    display: flex;
+    height: 720px;
+    position: relative;
+    margin: 50px auto 95px;
+}
+
+.questionnaire1 {
+    display: block;
+    position: absolute;
+}
+
+.questionnaire2 {
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 19%;
+}
+
+.questionnaire3 {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+
+.questionnaire4 {
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 52%;
+}
+
+.questionnaire5 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 70%;
+}
+
+.project_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.project_wrap .first_text,
+.project_wrap .second_text {
+    color: rgb(112, 112, 112);
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+}
+
+.second_text {
+    display: none;
+}
+
+.download_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dowload_content {
+    width: 100%;
+    display: flex;
+    margin-top: 71px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+/* .android,
+.qrCode {
+    flex: 0 1 48%;
+} */
+
+.download_img_1 {
+    width: 100%;
+}
+
+.download_img {
+    display: none;
+}
+
+.download_text {
+    color: rgb(112, 112, 112);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.download_text_small {
+    display: none;
+}
+
+footer {
+    margin-top: 113px;
+    background: rgb(0, 136, 162);
+}
+
+.footer_h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 96px;
+    font-weight: 600;
+    padding-top: 75px;
+    margin-bottom: 13px;
+}
+
+.number_title {
+    color: rgb(253, 253, 253);
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 68px;
+    margin-bottom: 39px;
+}
+
+.number_text {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 55px;
+}
+
+.contacts_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+/* .number_text_small {
+    width: 400px;
+} */
+
+.number_wrap {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number_text_last {
+    display: none;
+}
+
+#toggle {
+    opacity: 0;
+}
+
+.btn_nav {
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 16px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.btn_nav span,
+.btn_nav span::before,
+.btn_nav span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: .3s;
+    background-color: #0088A2;
+}
+
+.btn_nav span::before {
+    content: "";
+    top: -8px;
+}
+
+.btn_nav span::after {
+    content: "";
+    top: 8px;
+}
+
+.burger_menu {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    /* padding: 80px 20px; */
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 0 8px 1px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    transition: .3s;
+    padding: 50px 80px 0px 8px;
+}
+
+
+.burger_menu__item {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #0088A2;
+    color: rgb(0, 136, 162);
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    transition: .3s;
+    text-align: justify;
+    padding-top: 19px;
+    padding-bottom: 24px;
+}
+
+.burger_menu__item:hover {
+    color: rgb(253, 253, 253);
+    background-color: #0088A2;
+}
+
+#toggle:checked~.btn_nav span {
+    transform: rotate(45deg);
+}
+
+#toggle:checked~.btn_nav span::before {
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+#toggle:checked~.btn_nav span::after {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#toggle:checked~.burger_menu {
+    left: 0;
+    visibility: visible;
+}
